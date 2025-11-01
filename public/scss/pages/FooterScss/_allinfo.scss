@@ -2,17 +2,30 @@
 @use "../../global/index" as *;
 
 .all-info {
-  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint(mobile768) {
+    width: size(300);
+    align-items: start;
+  }
 
   .logo-des {
     gap: size(12);
-    margin-top: size(34);
+    cursor: pointer;
+    // border: 1px solid red;
+    display: inline-flex !important;
+
+    @include breakpoint(mobile768) {
+    }
     .logo-container {
       width: size(40);
       height: size(40);
     }
 
     h2 {
+      // border: 1px solid blue;
       margin: 0;
       color: #fff;
       font-family: Alata;
@@ -26,21 +39,29 @@
   }
 
   .description {
-     margin: 0;
+    
     color: var(--Typography-Color-5, #bababa);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
+    text-align: center;
+    margin: size(24) 0 0 0 !important;
     font-weight: 400;
     line-height: 150%; /* 21px */
+    @include breakpoint(mobile768) {
+      text-align: left;
+      margin: size(34) 0 0 0 !important;
+    }
+   
   }
 
   .logos {
-
+    margin: size(22) 0 0 0;
     gap: size(13);
     .logo {
       width: size(40);
       height: size(40);
+      cursor: pointer;
       padding: size(8);
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.09);
@@ -51,65 +72,105 @@
   }
 
   .assistant {
+    margin: size(32) 0 0 0;
+    @include breakpoint(mobile768){
+      margin: size(34) 0 0 0;
+    }
     h3 {
       color: #fff;
       font-family: Inter;
       font-size: 18px;
-       margin: 0;
+      margin: 0;
+      text-align: center;
       font-style: normal;
       font-weight: 700;
       line-height: 120%; /* 21.6px */
+      @include breakpoint(mobile768) {
+        text-align: left;
+      }
     }
 
     .location {
+      margin: size(8) 0 0 0;
+      @include breakpoint(mobile768){
+        margin: size(32) 0 0 0;
+      }
       h4 {
         color: var(--Typography-Color-5, #bababa);
         font-family: Inter;
-        font-size: 22px;
+        font-size: size(14);
         font-style: normal;
-         margin: 0;
+        text-align: center;
+        margin: 0;
         font-weight: 400;
         line-height: 160%; /* 28.8px */
+        @include breakpoint(mobile768) {
+          text-align: left;
+          font-size: 22px;
+        }
       }
 
       .number {
         color: white;
         font-family: Inter;
-        font-size: 18px;
-         margin: 0;
+        font-size: 14px;
+        color: var(--Typography-Color-5, #bababa);
+        text-align: center;
+        margin: 0;
         font-style: normal;
+
         font-weight: 400;
         line-height: 160%; /* 28.8px */
+        @include breakpoint(mobile768) {
+          text-align: left;
+          font-size: 18px;
+        }
       }
 
       .email {
-        color: #fff;
+        color: var(--Typography-Color-5, #bababa);
         font-family: Inter;
-        font-size: 18px;
-         margin: 0;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 120%; /* 21.6px */
+        @include breakpoint(mobile768) {
+          text-align: left;
+          font-size: 18px;
+        }
       }
 
       .addres-title {
+        margin: size(10) 0 0 0;
         color: var(--Typography-Color-5, #bababa);
         font-family: Inter;
-        font-size: 18px;
-         margin: 0;
+        font-size: 14px;
+        text-align: center;
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 28.8px */
+        @include breakpoint(mobile768) {
+          text-align: left;
+          font-size: 18px;
+        }
       }
 
       .address {
         color: var(--Typography-Color-5, #bababa);
         font-family: Inter;
         font-size: 18px;
-         margin: 0;
+        margin: 0;
+        text-align: center;
         font-style: normal;
         font-weight: 400;
+        font-size: 14px;
         line-height: 160%; /* 28.8px */
+        @include breakpoint(mobile768) {
+          text-align: left;
+          font-size: 18px;
+        }
       }
     }
   }

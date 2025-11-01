@@ -5,5 +5,15 @@
 footer{
     background: #1F1E28;
     width: 100%;
-    height: size(863);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile768){
+        height: 100dvh;
+
+        flex-direction: row;
+    }
+
+   
 }

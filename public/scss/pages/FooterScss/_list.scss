@@ -1,0 +1,41 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.footer-lists {
+  
+  display: flex;
+  text-align: center;
+  flex-direction: column !important;
+  gap: size(18);
+  @include breakpoint(mobile768) {
+    flex-direction: row !important;
+    text-align: left;
+    gap: size(80);
+  }
+  .footer-list-section {
+    list-style: none;
+    display: inline-flex;
+    // border: 2px solid blueviolet;
+    flex-direction: column;
+    gap: size(34);
+    .title {
+      color: #fff;
+
+      /* Headings/h4 */
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.09px;
+    }
+    li {
+      color: var(--Typography-Color-6, #e6e6e6);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 19.2px */
+    }
+  }
+}
