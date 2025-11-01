@@ -1,0 +1,96 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.banner-btn {
+  display: inline-flex; // Change from flex to inline-flex
+  height: auto; // Remove fixed height
+  cursor: pointer;
+  padding: size(9) size(12);
+  align-items: center;
+  gap: size(32);
+  border-right: 1px solid gray;
+  width: auto;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgb(173, 255, 218);
+    h2 {
+      color: black;
+    }
+  }
+  h2 {
+    color: var(--Nutral-Color-400, #7b7f95);
+    margin: 0;
+    /* XS/Regular */
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 140% */
+  }
+  .arrow-icon {
+    width: size(13);
+    height: size(13);
+  }
+}
+
+.AllbannerButtons {
+  max-width: size(980);
+  padding: size(8);
+  width: 100%;
+  border-radius: 0 8px 8px 8px;
+  background: var(--White-Base, #fff);
+
+  /* Shadow/shadow-sm */
+  box-shadow: 0 0 1px 0 rgba(12, 26, 75, 0.24),
+    0 3px 8px -1px rgba(50, 50, 71, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .keyword-btn {
+    width: size(100);
+    border: none;
+    background: none;
+
+    color: var(--Nutral-Color-400, #7b7f95);
+
+    /* XS/Regular */
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 140% */
+  }
+
+  .search-btn {
+    border-radius: 6px;
+    background: var(--Primary-700, #0f766d);
+    width: size(96);
+    display: flex;
+    gap: size(6);
+    align-items: center;
+
+    padding: size(8) size(16);
+    height: size(30);
+    cursor: pointer;
+
+    transition: all 0.4s ease-in;
+    &:hover {
+      background: var(--Primary-700, #25daa7);
+    }
+
+    img {
+      width: size(16);
+      height: size(16);
+    }
+    span {
+      color: var(--White-Base, #fff);
+
+      /* text-sm/Bold */
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 133.333% */
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.smallnavbar {
+    box-shadow: 
+    0 -8px 16px rgba(0, 0, 0, 0.12),
+    0 -4px 8px rgba(0, 0, 0, 0.08);
+
+    height: size(60);
+    position: fixed;
+    bottom: 0;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+    border-top-left-radius: size(24);
+    border-top-right-radius: size(24);
+    @include breakpoint(desktop1024){
+        display: none;
+    }
+  .maincontent {
+    display: flex;
+    padding: size(12) size(40);
+    justify-content: space-between;
+    align-items: center;
+    .link {
+        cursor: pointer;
+       
+        display: flex;
+        width: size(100);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      .icon {
+        width: size(24);
+        color: gray;
+      }
+      span {
+        color: var(--Nutral-Color-950, #09090b);
+
+        /* Text Base/Semi bold */
+        white-space: nowrap;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+      }
+
+      &:hover{
+        .icon {
+        width: size(24);
+        color: rgb(32, 221, 136);
+      }
+      span{
+        color: rgb(32, 221, 136);
+      }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.all-info {
+  border: 1px solid red;
+
+  .logo-des {
+    gap: size(12);
+    margin-top: size(34);
+    .logo-container {
+      width: size(40);
+      height: size(40);
+    }
+
+    h2 {
+      margin: 0;
+      color: #fff;
+      font-family: Alata;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 66.667% */
+      letter-spacing: 1.44px;
+      text-transform: uppercase;
+    }
+  }
+
+  .description {
+     margin: 0;
+    color: var(--Typography-Color-5, #bababa);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+
+  .logos {
+
+    gap: size(13);
+    .logo {
+      width: size(40);
+      height: size(40);
+      padding: size(8);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.09);
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .assistant {
+    h3 {
+      color: #fff;
+      font-family: Inter;
+      font-size: 18px;
+       margin: 0;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 21.6px */
+    }
+
+    .location {
+      h4 {
+        color: var(--Typography-Color-5, #bababa);
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+         margin: 0;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+      }
+
+      .number {
+        color: white;
+        font-family: Inter;
+        font-size: 18px;
+         margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+      }
+
+      .email {
+        color: #fff;
+        font-family: Inter;
+        font-size: 18px;
+         margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 21.6px */
+      }
+
+      .addres-title {
+        color: var(--Typography-Color-5, #bababa);
+        font-family: Inter;
+        font-size: 18px;
+         margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+      }
+
+      .address {
+        color: var(--Typography-Color-5, #bababa);
+        font-family: Inter;
+        font-size: 18px;
+         margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+      }
+    }
+  }
+}

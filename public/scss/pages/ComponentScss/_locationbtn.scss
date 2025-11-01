@@ -1,0 +1,32 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.location-btn {
+  
+  width: size(120);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .img-container {
+    width: size(24);
+    height: size(24);
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    color: var(--Border-Dark, #16192c);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Input/Large */
+    font-family: Inter;
+    font-size: 15px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+  }
+  .arrow-icon {
+    width: size(13);
+  }
+}

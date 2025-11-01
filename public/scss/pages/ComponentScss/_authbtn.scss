@@ -1,0 +1,108 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.auth-btn {
+  padding: size(6) size(18) size(6) size(7);
+  width: size(165);
+  border-radius: 10px;
+  background: var(--Nutral-Color-50, #f4f5f7);
+  height: size(48);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include breakpoint(desktop1024) {
+    padding: size(6) size(18) size(6) size(7);
+    width: size(224);
+    border-radius: 10px;
+    background: var(--Nutral-Color-50, #f4f5f7);
+    height: size(48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .login-btn {
+    display: flex;
+    width: size(80);
+    border-radius: 6px;
+    border: 2px solid var(--White-Base, #fff);
+    background: var(--White-Base, #fff);
+
+    /* Shadow/shadow-sm */
+    box-shadow: 0 0 1px 0 rgba(12, 26, 75, 0.24),
+      0 3px 8px -1px rgba(50, 50, 71, 0.05);
+    height: size(36);
+    align-items: center;
+    gap: size(7);
+    transition: all 0.3s ease;
+
+    @include breakpoint(desktop1024) {
+      display: flex;
+      width: size(115);
+      border-radius: 6px;
+      border: 2px solid var(--White-Base, #fff);
+      background: var(--White-Base, #fff);
+
+      /* Shadow/shadow-sm */
+      box-shadow: 0 0 1px 0 rgba(12, 26, 75, 0.24),
+        0 3px 8px -1px rgba(50, 50, 71, 0.05);
+      height: size(36);
+      align-items: center;
+      gap: size(7);
+    }
+
+    &:hover {
+      border: 1px solid rgb(9, 226, 197);
+    }
+    img {
+      border: none;
+      width: size(24);
+
+      height: size(24);
+    }
+    span {
+      color: var(--Primary-700, #0f766d);
+
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+
+      @include breakpoint(desktop1024) {
+        color: var(--Primary-700, #0f766d);
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+      }
+    }
+  }
+  .sign-up {
+    color: var(--Nutral-Color-950, #09090b);
+    border: none;
+    background: none;
+    font-family: Inter;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+
+    @include breakpoint(desktop1024) {
+      color: var(--Nutral-Color-950, #09090b);
+      border: none;
+      background: none;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+    }
+    &:hover {
+      color: rgb(9, 226, 197);
+    }
+  }
+}

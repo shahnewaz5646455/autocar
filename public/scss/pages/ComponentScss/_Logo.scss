@@ -1,0 +1,33 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.logo {
+  position: relative;
+  
+
+ 
+width: size(106);
+  .img-container {
+    width: 100%;
+    height: size(35);
+    img {
+      width: 100%;
+    }
+  }
+  h2 {
+    color: #000;
+    position: absolute;
+    font-family: Anybody;
+    font-size: 14.877px;
+    
+    font-style: normal;
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+   bottom: size(-7);
+    font-weight: 500;
+    line-height: 9.918px; /* 66.667% */
+    letter-spacing: 0.893px;
+    text-transform: uppercase;
+  }
+}

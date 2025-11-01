@@ -1,0 +1,33 @@
+/*============================== 
+	- Template Name: JG-HEALTHCARE HTML TEMPLATE
+	- Author: Qtec Solution Limited
+	- Version: 1.0
+	- Website: https://qtecsolution.com/
+================================= */
+
+@forward "./reset";
+@forward "./components";
+@forward "./custom";
+@forward "./pages/ComponentScss/CustomSelect";
+@forward "./pages/ComponentScss/locationbtn";
+@forward "./pages/ComponentScss/banner1";
+@forward "./pages/ComponentScss/smallNavbar";
+@forward "./pages/ComponentScss/authbtn";
+@forward "./pages/ComponentScss/BannerBtn.scss";
+@forward "./pages/FooterScss/footer";
+@forward "./pages/FooterScss/allinfo";
+@forward "./pages/ComponentScss/searchProduct";
+@forward "./pages/ComponentScss/Logo";
+@forward "./pages/ComponentScss/SearchBar";
+@forward "./pages/ComponentScss/Navbar2";
+
+@forward "./pages/ComponentScss/Navbar";
+@forward "./pages";
+@forward "./utilities";
+@forward "./animations";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

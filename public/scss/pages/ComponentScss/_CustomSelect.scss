@@ -1,0 +1,170 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+
+
+
+.CustomSelect {
+ 
+  width: size(150);
+  cursor: pointer;
+   @include breakpoint(desktop1024){
+          width: size(120) !important;
+    }
+  // Container
+  .react-select-container {
+    // Container styles if needed
+  }
+
+  // Control (main input area)
+  .react-select__control {
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    min-height: 36px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    height: 36px;
+    cursor: pointer;
+
+    // States
+    &.react-select__control--is-focused {
+      border-color: blue;
+    }
+
+    &:hover {
+      border-color: darkgray;
+    }
+  }
+
+  // Value container
+  .react-select__value-container {
+    height: 34px;
+    padding: 0 8px;
+  }
+
+  // Single value
+  .react-select__single-value {
+
+
+    color: var(--Border-Dark, #16192c);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Input/Large */
+    font-family: Inter;
+    font-size: 12px;
+   
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+
+       @include breakpoint(desktop1024){
+         color: var(--Border-Dark, #16192c);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Input/Large */
+    font-family: Inter;
+    font-size: 15px;
+   
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+        
+    }
+  }
+
+  // Input
+  .react-select__input {
+    
+    margin: 0;
+    padding: 0;
+
+    input {
+      
+      box-shadow: none !important;
+    }
+  }
+
+  // Indicators container
+  .react-select__indicators {
+    height: 34px;
+  
+    .css-1u9des2-indicatorSeparator{
+      width: size(0);
+    }
+     
+  }
+
+  // Dropdown indicator
+  .react-select__dropdown-indicator {
+    padding: 4px;
+
+    color: gray;
+
+    &:hover {
+      color: darkgray;
+    }
+  }
+
+  // Menu (dropdown)
+  .react-select__menu {
+    padding: size(5) 0;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  // Menu list
+  .react-select__menu-list {
+    padding: 0;
+  }
+
+  // Options
+  .react-select__option {
+    padding: 8px 12px;
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+    color: var(--Border-Dark, #16192c);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Input/Large */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+
+    // Focus state
+    &.react-select__option--is-focused {
+      background-color: lightblue;
+    }
+
+    // Selected state
+    &.react-select__option--is-selected {
+       background-color: lightblue;
+      color: white;
+    }
+
+    &:hover {
+      background-color: lightblue;
+    }
+  }
+
+  // Placeholder
+  .react-select__placeholder {
+    color: #999;
+  }
+}
+
+
+
+
+
+
+
+
+

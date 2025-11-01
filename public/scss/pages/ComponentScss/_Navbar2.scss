@@ -1,0 +1,255 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.nav2 {
+  display: none !important;
+  max-width: size(1200);
+  padding: 0 size(10);
+  width: 100%;
+  margin: size(17) auto size(0) auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(desktop1024) {
+    display: flex !important;
+  }
+  .logo-searchbar {
+    cursor: pointer;
+    width: size(730);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    width: size(380);
+    display: flex;
+  }
+}
+
+.ResponsiveNabvar {
+  padding: size(5) size(5);
+
+  @include breakpoint(desktop1024) {
+    display: none;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ImageCarousel.css */
+
+/* container already relative in component */
+.carousel-container {
+  position: relative;
+  max-width: size(845);
+  width: 100%;
+  height: size(70);
+
+  // height: size(475) !important;
+
+  
+  @include breakpoint(desktop1024) {
+    position: relative;
+    max-width: size(665);
+    width: 100%;
+    height: size(575);
+
+  }
+  @include breakpoint(desktop1367){
+     position: relative;
+    max-width: size(845);
+    width: 100%;
+
+    height: size(475) !important;
+    
+  }
+
+}
+
+/* -------------------
+   Pagination on the left (vertical)
+   ------------------- */
+.swiper-pagination {
+  position: absolute;
+  left: size(10) !important; /* distance from left edge of carousel */
+  bottom: size(50) !important;
+
+  display: flex;
+  flex-direction: row; /* stack bullets vertically */
+  gap: size(2); /* spacing between bullets */
+  width: auto;
+  z-index: 20;
+  pointer-events: none; /* allow pointer events only on bullets */
+}
+
+.slide-image {
+}
+
+/* ensure bullets receive pointer events */
+
+/* active bullet style */
+.swiper-pagination-bullet-active {
+  background: #ff6b35; /* highlight color - change to your brand color */
+  transform: scale(1.35);
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+/* optional: smaller bullets on mobile */
+@media (max-width: 480px) {
+  .swiper-pagination {
+    left: 8px;
+    gap: 8px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* -------------------
+   Navigation buttons (left side)
+   ------------------- */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  position: absolute;
+
+  display: none !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.swiper-button-prev {
+  left: 12px; /* keep near pagination */
+}
+
+.swiper-button-next {
+  left: 60px; /* a bit to the right of prev */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* -------------------
+   Generic slide image styles
+   ------------------- */
+.slide-image {
+  // max-width: size(500);
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 8px;
+  @include breakpoint(desktop1024){
+     width: 100%;
+     height: size(400);
+  }
+
+  @include breakpoint(desktop1367) {
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+.slide-image2 {
+  width: 100%;
+  // height: size(250);
+  object-fit: cover;
+  border-radius: 22px;
+  @include breakpoint(desktop1024) {
+    width: 100%;
+    height: size(475);
+    object-fit: fill;
+    border-radius: 20px;
+  }
+}
+/* -------------------
+   Custom design for second slide
+   - rounded card look
+   - shadow, overlay text, small zoom on hover
+   ------------------- */
+
+/* overlay box on top of image */
+
+/* typography in overlay */
+
+/* small responsive adjustments */
+
+.banner {
+  width: 100%;
+  
+
+  .content {
+    
+    display: flex;
+    max-width: size(1280);
+    width: 100%;
+    margin: size(10) auto;
+    padding: 0 size(5);
+
+    justify-content: center;
+
+    align-items: center;
+    @include breakpoint(desktop1024) {
+      display: flex;
+      max-width: size(1280);
+      width: 100%;
+      align-self: self-start;
+      margin: size(0) auto ;
+      border: 1px solid red !important;
+      padding: 0 size(0);
+      justify-content:space-around !important;
+
+      align-items: center;
+
+
+    }
+    @include breakpoint(desktop1366){
+       display: flex;
+         border: 1px solid rgb(21, 0, 255) !important;
+      max-width: size(1280);
+      width: 100%;
+      margin: size(10) auto;
+      padding: 0 size(0);
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+ .left-img {
+  display: none;
+
+  @include breakpoint(desktop1024) {
+    display: block;
+    width: 100%;
+    max-width: size(422);
+    height: auto; // Remove fixed height
+  
+    
+    img {
+      width: 100%;
+      height: auto; // Allow height to scale with width
+      object-fit: cover; // Ensure entire image is visible
+    }
+  }
+}
+  }
+}
