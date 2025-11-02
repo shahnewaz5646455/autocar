@@ -41,15 +41,29 @@ export default function Footer() {
 
   return (
     <footer className="">
-      
+      <div className="container">
+        <div className="logosAndInfo">
+          <AllInfo></AllInfo>
+          <div className="list-store">
+            <List alllinks={alllinks} />
+            <div className="store-container">
+              <FooterStore></FooterStore>
+            </div>
+          </div>
+        </div>
 
-      <AllInfo></AllInfo>
-      <List alllinks={alllinks} />
-      <FooterStore></FooterStore>
-      <SubscribeBox></SubscribeBox>
-      <PaymentCard></PaymentCard>
-      <CopyRight></CopyRight>
-    
+        <div className="subscribe-payment">
+          <SubscribeBox></SubscribeBox>
+          <PaymentCard></PaymentCard>
+          <CopyRight></CopyRight>
+        </div>
+      </div>
+
+      {/* <List alllinks={alllinks} /> */}
+      {/* <FooterStore></FooterStore> */}
+      {/* <SubscribeBox></SubscribeBox> */}
+      {/* <PaymentCard></PaymentCard> */}
+      {/* <CopyRight></CopyRight> */}
     </footer>
   );
 }

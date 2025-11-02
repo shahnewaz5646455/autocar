@@ -1,21 +1,45 @@
 @use "../../partials/index" as *;
 @use "../../global/index" as *;
 
+footer {
+  background: #1f1e28;
+  width: 100%;
+  height: calc(100dvh + auto);
 
-footer{
-    background: #0f1d2d;
-    width: 100%;
-    height: calc(100dvh + auto);
-    
+  @include breakpoint(mobile768) {
+    height: calc(100dvh + auto) !important;
 
-    @include breakpoint(mobile768){
-        
-        
-   height: calc(100dvh + auto) !important;
-   
+    flex-direction: row;
+  }
 
-        flex-direction: row;
+  .container{
+    padding-top: size(20);
+    padding-bottom: size(10);
+
+    @include breakpoint(desktop1024){
+        padding-top: size(192);
     }
 
-   
+    .logosAndInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: size(20);
+
+        @include breakpoint(desktop1024){
+             display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: size(50);
+        }
+        .list-store{
+            //   grid-column: span 2;
+              @include breakpoint(desktop1024){
+                grid-column: span 2;
+              }
+
+              .store-container{
+               
+              }
+        }
+    }
+  }
 }

@@ -1,19 +1,18 @@
 @use "../../partials/index" as *;
 @use "../../global/index" as *;
 
-*{
-  // border: 1px solid red;
-}
-
 .footerStore {
   display: inline-flex;
   height: auto;
+  margin-top: size(50);
   justify-content: center;
   gap: size(-1);
+  // padding: 0 size(60) !important;
   width: 100% !important;
   // border: 1px solid blue;
   @include breakpoint(mobile768) {
     height: auto;
+    width: 100%;
   }
   @include breakpoint(desktop1100) {
     height: auto;
@@ -25,7 +24,7 @@
     align-items: center;
     height: auto;
     border: 2px solid rgba(255, 255, 255, 0.52);
-    padding: size(15) size(10);
+    padding: size(15) size(5) !important;
     flex-shrink: 0;
 
     border-top-left-radius: size(12);
@@ -38,7 +37,10 @@
     }
     @include breakpoint(desktop1100) {
       height: size(80);
-       padding: size(60) size(47) !important;
+      padding: size(15) size(20) !important;
+    }
+    @include breakpoint(desktop1200) {
+      padding: size(40) size(20) !important;
     }
     legend {
       color: #15b7b7;
@@ -48,22 +50,37 @@
       font-weight: 700;
       line-height: 160%; /* 28.8px */
       @include breakpoint(desktop1100) {
-          font-size: 18px;
+        font-size: 18px;
       }
     }
     .images {
       display: flex;
       gap: size(13);
       .img-container {
-          width: size(60);
-          @include breakpoint(mobile576) {
-            width: size(80);
-          }
-        @include breakpoint(mobile768) {
-          width: size(100);
+        cursor: pointer;
+        width: size(60) !important;
+        @include breakpoint(mobile576) {
+          width: size(80) !important;
+          // border: 1px solid red !important;
         }
-        @include breakpoint(desktop1100){
-            width: size(130);
+        @include breakpoint(mobile768) {
+          width: size(150) !important;
+        }
+        @include breakpoint(desktop1024) {
+          width: size(130) !important;
+        }
+
+        @include breakpoint(desktop1100) {
+          width: size(118) !important;
+        }
+        @include breakpoint(desktop1200) {
+          width: size(153) !important;
+        }
+        @include breakpoint(desktop1366) {
+          // width: size(150) !important;
+        }
+        @include breakpoint(desktop1400) {
+          width: size(183) !important;
         }
         img {
           width: 100%;
