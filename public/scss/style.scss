@@ -16,6 +16,8 @@
 @forward "./pages/ComponentScss/BannerBtn.scss";
 @forward "./pages/FooterScss/footer";
 @forward "./pages/FooterScss/footerstore";
+@forward "./pages/FooterScss/list";
+@forward "./pages/FooterScss/subscribebox";
 @forward "./pages/FooterScss/allinfo";
 @forward "./pages/ComponentScss/searchProduct";
 @forward "./pages/ComponentScss/Logo";
@@ -31,4 +33,25 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+
+/* Reset Bootstrap influence */
+.no-bootstrap * {
+  all: unset;            /* remove all inherited Bootstrap styles */
+  display: revert;       /* restore browser default display */
+  box-sizing: border-box;
+}
+
+/* Reapply your own styling below */
+.no-bootstrap fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.no-bootstrap legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
 }

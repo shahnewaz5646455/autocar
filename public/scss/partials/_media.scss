@@ -7,6 +7,7 @@ $breakpoints: (
   break-480: 480,
   break-500: 500,
   break-576: 576,
+  break-600: 600,
   break-768: 768,
   break-991: 991,
   break-992: 992,
@@ -68,7 +69,14 @@ $breakpoints: (
     @media screen and (min-width: break(break-576)) {
       @content;
     }
-  } @else if $breakpoints==mobile768 {
+  } 
+   @else if $breakpoints==mobile600 {
+    @media screen and (min-width: break(break-600)) {
+      @content;
+    }
+  }
+  
+  @else if $breakpoints==mobile768 {
     @media screen and (min-width: break(break-768)) {
       @content;
     }

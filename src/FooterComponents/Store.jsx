@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FooterStore() {
   return (
-    <div className="footerStore">
+    <div className="no-bootstrap footerStore">
       <fieldset className="fieldset1">
         <legend>Download Customer App</legend>
         <div className="images d-flex">

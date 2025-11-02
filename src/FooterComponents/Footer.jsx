@@ -2,6 +2,9 @@ import React from "react";
 import AllInfo from "./AllInfo";
 import List from "./List";
 import FooterStore from "./Store";
+import SubscribeBox from "./SubscribeBox";
+import PaymentCard from "./PaymentCard";
+import CopyRight from "./CopyRight";
 
 export default function Footer() {
   const alllinks = [
@@ -40,9 +43,12 @@ export default function Footer() {
     <footer className="">
       
 
-      {/* <AllInfo></AllInfo> */}
-      {/* <List alllinks={alllinks} /> */}
+      <AllInfo></AllInfo>
+      <List alllinks={alllinks} />
       <FooterStore></FooterStore>
+      <SubscribeBox></SubscribeBox>
+      <PaymentCard></PaymentCard>
+      <CopyRight></CopyRight>
     
     </footer>
   );

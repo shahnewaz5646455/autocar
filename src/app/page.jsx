@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import CopyRight from "@/FooterComponents/CopyRight";
 // import CustomSelect from "@/Components/CustomSelect";
 // import CustomSelect2 from "@/Components/CustomSelect.2";
 // import SearchBar from "@/Components/SearchBar";
@@ -26,6 +27,8 @@ export default function Home() {
       {/* <SmallNavbar></SmallNavbar> */}
 
       {/* <Banner1></Banner1> */}
+
+     
     </div>
   );
 }

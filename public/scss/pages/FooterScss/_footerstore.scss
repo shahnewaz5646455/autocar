@@ -1,17 +1,22 @@
 @use "../../partials/index" as *;
 @use "../../global/index" as *;
 
+*{
+  // border: 1px solid red;
+}
+
 .footerStore {
   display: inline-flex;
   height: auto;
   justify-content: center;
+  gap: size(-1);
   width: 100% !important;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   @include breakpoint(mobile768) {
     height: auto;
   }
   @include breakpoint(desktop1100) {
-    height: size(80);
+    height: auto;
   }
   .fieldset1 {
     display: flex;
@@ -20,11 +25,13 @@
     align-items: center;
     height: auto;
     border: 2px solid rgba(255, 255, 255, 0.52);
-    padding: size(15) size(20);
+    padding: size(15) size(10);
     flex-shrink: 0;
 
     border-top-left-radius: size(12);
+    border-top-right-radius: size(0);
     border-bottom-left-radius: size(12);
+    border-bottom-right-radius: size(0);
     border-right: none;
     @include breakpoint(mobile768) {
       height: size(80);
