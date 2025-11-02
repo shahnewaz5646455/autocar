@@ -1,0 +1,79 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.footerStore {
+  display: inline-flex;
+  height: auto;
+  justify-content: center;
+  width: 100% !important;
+  border: 1px solid blue;
+  @include breakpoint(mobile768) {
+    height: auto;
+  }
+  @include breakpoint(desktop1100) {
+    height: size(80);
+  }
+  .fieldset1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.52);
+    padding: size(15) size(20);
+    flex-shrink: 0;
+
+    border-top-left-radius: size(12);
+    border-bottom-left-radius: size(12);
+    border-right: none;
+    @include breakpoint(mobile768) {
+      height: size(80);
+    }
+    @include breakpoint(desktop1100) {
+      height: size(80);
+       padding: size(60) size(47) !important;
+    }
+    legend {
+      color: #15b7b7;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 28.8px */
+      @include breakpoint(desktop1100) {
+          font-size: 18px;
+      }
+    }
+    .images {
+      display: flex;
+      gap: size(13);
+      .img-container {
+          width: size(60);
+          @include breakpoint(mobile576) {
+            width: size(80);
+          }
+        @include breakpoint(mobile768) {
+          width: size(100);
+        }
+        @include breakpoint(desktop1100){
+            width: size(130);
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .fieldset2 {
+    border-top-left-radius: size(0);
+    border-bottom-left-radius: size(0);
+    border-top-right-radius: size(12);
+    border-left: 1px solid rgba(255, 255, 255, 0.52);
+    border-bottom-right-radius: size(12);
+    border-right: 2px solid rgba(255, 255, 255, 0.52);
+    @extend .fieldset1;
+    legend {
+      color: #ffa47c;
+    }
+  }
+}

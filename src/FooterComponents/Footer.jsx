@@ -1,6 +1,7 @@
 import React from "react";
 import AllInfo from "./AllInfo";
 import List from "./List";
+import FooterStore from "./Store";
 
 export default function Footer() {
   const alllinks = [
@@ -41,6 +42,7 @@ export default function Footer() {
 
       {/* <AllInfo></AllInfo> */}
       {/* <List alllinks={alllinks} /> */}
+      <FooterStore></FooterStore>
     
     </footer>
   );
