@@ -2,6 +2,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import CopyRight from "@/FooterComponents/CopyRight";
+import Dropdownbtn from "@/HomeComponents/Dropdownbtn";
+import SearchBar from "@/HomeComponents/SearchBar";
 // import CustomSelect from "@/Components/CustomSelect";
 // import CustomSelect2 from "@/Components/CustomSelect.2";
 // import SearchBar from "@/Components/SearchBar";
@@ -20,13 +22,7 @@ import CopyRight from "@/FooterComponents/CopyRight";
 export default function Home() {
   return (
     <div className="d-flex">
-      {/* <ResponsiveNabvar></ResponsiveNabvar> */}
-      {/* <Banner></Banner> */}
-    
-
-      {/* <SmallNavbar></SmallNavbar> */}
-
-      {/* <Banner1></Banner1> */}
+ <SearchBar></SearchBar>
 
      
     </div>

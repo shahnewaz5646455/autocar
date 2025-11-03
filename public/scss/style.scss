@@ -8,23 +8,20 @@
 @forward "./reset";
 @forward "./components";
 @forward "./custom";
-@forward "./pages/ComponentScss/CustomSelect";
-@forward "./pages/ComponentScss/locationbtn";
-@forward "./pages/ComponentScss/banner1";
-@forward "./pages/ComponentScss/smallNavbar";
-@forward "./pages/ComponentScss/authbtn";
-@forward "./pages/ComponentScss/BannerBtn.scss";
+
 @forward "./pages/FooterScss/footer";
 @forward "./pages/FooterScss/footerstore";
 @forward "./pages/FooterScss/list";
 @forward "./pages/FooterScss/subscribebox";
 @forward "./pages/FooterScss/allinfo";
-@forward "./pages/ComponentScss/searchProduct";
-@forward "./pages/ComponentScss/Logo";
-@forward "./pages/ComponentScss/SearchBar";
-@forward "./pages/ComponentScss/Navbar2";
 
-@forward "./pages/ComponentScss/Navbar";
+@forward "./pages/Homecomponent/banner";
+@forward "./pages/Homecomponent/dropdownbtn";
+@forward "./pages/Homecomponent/mainnav";
+@forward "./pages/Homecomponent/searchbarbtn";
+@forward "./pages/Homecomponent/nav2";
+@forward "./pages/Homecomponent/navlinks";
+
 @forward "./pages";
 @forward "./utilities";
 @forward "./animations";

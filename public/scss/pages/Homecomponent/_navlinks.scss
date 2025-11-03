@@ -1,0 +1,25 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+.navlinks {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: size(40);
+    li {
+      a {
+        text-decoration: none;
+        color: var(--Nutral-Color-900, #383941);
+        transition: all 0.3s ease;
+        font-family: Inter;
+        font-size: size(14);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        &:hover {
+          color: #027371;
+        }
+      }
+    }
+  }
+}

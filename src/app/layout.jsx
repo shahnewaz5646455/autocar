@@ -4,6 +4,11 @@ import "./globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/style.css";
 import Footer from "@/FooterComponents/Footer";
+import Navlinks from "@/HomeComponents/Navlinks";
+import Dropdownbtn from "@/HomeComponents/Dropdownbtn";
+import SocialIcons from "@/HomeComponents/SocialIcons";
+import Stores from "@/HomeComponents/Stores";
+import Navbar from "@/HomeComponents/Navbar";
 // import Navbar from "@/Components/Navbar";
 // import Navbar2 from "@/Components/Navbar2";
 
@@ -23,10 +28,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body>
-        {/* <Navbar></Navbar> */}
+       <Navbar></Navbar>
         {/* <Navbar2></Navbar2> */}
         {children}
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </body>
     </html>
   );

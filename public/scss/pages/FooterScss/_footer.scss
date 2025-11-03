@@ -4,7 +4,7 @@
 footer {
   background: #1f1e28;
   width: 100%;
-  height: calc(100dvh + auto);
+  height: calc(100dvh + auto) !important;
 
   @include breakpoint(mobile768) {
     height: calc(100dvh + auto) !important;
@@ -43,3 +43,7 @@ footer {
     }
   }
 }
+
+
+
+

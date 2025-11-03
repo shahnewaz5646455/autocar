@@ -1,0 +1,29 @@
+
+
+
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.mainnav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: size(60);
+    background: #EDF7F7;
+    .contents{
+        max-width: size(1200);
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 size(12);
+        align-items: center;
+        justify-content: space-between;
+        .content{
+            gap: size(18);
+            .dropsocial{
+               
+                gap: size(8);
+               
+            }
+        }
+    }
+}

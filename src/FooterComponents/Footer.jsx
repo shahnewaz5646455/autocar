@@ -5,6 +5,7 @@ import FooterStore from "./Store";
 import SubscribeBox from "./SubscribeBox";
 import PaymentCard from "./PaymentCard";
 import CopyRight from "./CopyRight";
+import Store2 from "./Store2";
 
 export default function Footer() {
   const alllinks = [
@@ -64,6 +65,8 @@ export default function Footer() {
       {/* <SubscribeBox></SubscribeBox> */}
       {/* <PaymentCard></PaymentCard> */}
       {/* <CopyRight></CopyRight> */}
+
+      {/* <Store2></Store2> */}
     </footer>
   );
 }
