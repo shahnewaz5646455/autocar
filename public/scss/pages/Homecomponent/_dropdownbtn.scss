@@ -119,6 +119,7 @@
     top: 0;
     background: white;
     z-index: 1000;
+    border-bottom: 1px solid rgb(234, 232, 232);
   @include breakpoint(desktop1024) {
     display: none;
   }
@@ -188,12 +189,14 @@
     .searchdropdown {
       position: relative;
       background: white;
+      
       border-radius: size(5);
       cursor: pointer;
       .dropdownbtn {
         width: size(128);
         height: size(36);
         display: flex;
+        // border: 1px solid red;
         align-items: center;
         justify-content: space-between;
         // border: 1px solid red;
@@ -220,13 +223,14 @@
       ul {
         list-style: none;
         width: size(128);
-        z-index: 1000;
+        z-index: 2000;
+        
         transform: translateY(-6px);
         // hidden by default (for smooth transition)
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: calc(100% + size(5));
+        top: calc(100% + size(10));
         height: auto;
         background: white;
         border-radius: size(5);

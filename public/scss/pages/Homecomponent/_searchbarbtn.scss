@@ -6,6 +6,11 @@ header {
   position:sticky;
   top: 0;
   z-index: 1000;
+  display: none;
+  @include breakpoint(desktop1024){
+    display: block;
+  }
+ 
 
   border-bottom: 2px solid rgb(230, 228, 228);
 }
@@ -27,6 +32,7 @@ header {
   .searchdropdown {
     position: relative;
     background: white;
+    
     border-radius: size(5);
     cursor: pointer;
     .dropdownbtn {
@@ -59,7 +65,7 @@ header {
     ul {
       list-style: none;
       width: size(128);
-      z-index: 1000;
+      z-index: 1500;
       transform: translateY(-6px);
       // hidden by default (for smooth transition)
       opacity: 0;
