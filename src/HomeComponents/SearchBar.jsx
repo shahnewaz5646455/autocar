@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -6,7 +8,7 @@ export default function SearchBar() {
   return (
     <>
       <header>
-        <div className="nav2">
+        <div className="nav2 container">
           <div className="logo-search">
             <div className="logo">
               <img

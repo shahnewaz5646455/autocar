@@ -17,6 +17,8 @@
     @include breakpoint(desktop1024){
         display: none;
     }
+
+ 
   .maincontent {
     display: flex;
     padding: size(12) size(40);
@@ -58,4 +60,6 @@
       }
     }
   }
+
+  
 }

@@ -7,7 +7,7 @@ import Stores from "./Stores";
 export default function Navbar() {
   return (
     <div className="mainnav">
-      <div className="d-flex contents">
+      <div className="d-flex contents container">
         <Navlinks></Navlinks>
         <div className="d-flex content">
           <div className="d-flex align-items-center dropsocial">

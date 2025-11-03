@@ -9,6 +9,9 @@ import Dropdownbtn from "@/HomeComponents/Dropdownbtn";
 import SocialIcons from "@/HomeComponents/SocialIcons";
 import Stores from "@/HomeComponents/Stores";
 import Navbar from "@/HomeComponents/Navbar";
+import SmallNavbar from "@/HomeComponents/SmallNavbar";
+import FixedNavbar from "@/HomeComponents/FixedNavbar";
+import SearchBar from "@/HomeComponents/SearchBar";
 // import Navbar from "@/Components/Navbar";
 // import Navbar2 from "@/Components/Navbar2";
 
@@ -27,11 +30,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>
+      <body className=" position-relative">
+        <SmallNavbar></SmallNavbar>
        <Navbar></Navbar>
+       <SearchBar></SearchBar>
         {/* <Navbar2></Navbar2> */}
         {children}
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
+        <FixedNavbar></FixedNavbar>
       </body>
     </html>
   );

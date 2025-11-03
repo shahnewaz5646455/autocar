@@ -4,6 +4,9 @@ import styles from "./page.module.css";
 import CopyRight from "@/FooterComponents/CopyRight";
 import Dropdownbtn from "@/HomeComponents/Dropdownbtn";
 import SearchBar from "@/HomeComponents/SearchBar";
+import Dropdown2 from "@/HomeComponents/Dropdown2";
+import Banner2 from "@/HomeComponents/Banner2";
+import Slider from "@/HomeComponents/Slider";
 // import CustomSelect from "@/Components/CustomSelect";
 // import CustomSelect2 from "@/Components/CustomSelect.2";
 // import SearchBar from "@/Components/SearchBar";
@@ -21,8 +24,12 @@ import SearchBar from "@/HomeComponents/SearchBar";
 
 export default function Home() {
   return (
-    <div className="d-flex">
- <SearchBar></SearchBar>
+    <div className="">
+ 
+ {/* <Dropdown2></Dropdown2> */}
+
+ <Banner2></Banner2>
+ <Slider></Slider>
 
      
     </div>

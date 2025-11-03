@@ -1,0 +1,58 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+
+
+
+.slider-container {
+//   border: 1px solid red;
+
+
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+
+  .slider {
+    width: 100%;
+    grid-column: span 3;
+
+
+    justify-self: end;
+    
+  
+    .swiper-slide{
+
+       
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @include breakpoint(desktop1024) {
+      max-width: size(845);
+      grid-column: span 2;
+
+      width: 100%;
+    }
+  }
+  .another-img {
+    display: none;
+    @include breakpoint(desktop1024) {
+      display: block;
+    }
+    max-width: size(420);
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+

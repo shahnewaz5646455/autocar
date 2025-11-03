@@ -1,0 +1,59 @@
+@use "../../partials/index" as *;
+@use "../../global/index" as *;
+
+.fixed-navbar {
+  // navbar styles
+  display: flex;
+  @include breakpoint(desktop1024) {
+    display: none;
+  }
+  justify-content: space-around;
+  box-shadow: -1px -7px 15px -2px rgba(0,0,0,0.5);
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  padding: size(10) size(15) size(10) size(15);
+  border-top-left-radius: size(30);
+  border-top-right-radius: size(30);
+  .navlink {
+    // each link container
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: size(10);
+    width: size(80);
+    border-radius: size(8);
+    height: size(50);
+
+    .icon {
+      width: size(30);
+      color: gray;
+      // icon styles
+    }
+
+    span {
+      color: gray;
+
+      /* text-sm/Bold */
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 133.333% */
+    }
+
+    &:hover {
+      .icon {
+        color: #0f766d;
+      }
+      background: #f4f5f7;
+    }
+
+    &.active {
+      // active state styles
+    }
+  }
+}
