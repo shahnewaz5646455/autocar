@@ -10,7 +10,7 @@ export default function SocialIcons() {
         <img src="instagram.svg" alt="" />
       </li>
       <li>
-        <img src="twitter.svg" alt="" />
+        <img className="tweeter" src="xappimg.svg" alt="" />
       </li>
       <li>
         <img src="linkedin.svg" alt="" />

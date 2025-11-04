@@ -2,10 +2,10 @@
 @use "../../global/index" as *;
 
 .main-banner-container {
-  max-width: size(1176);
-  width: 100%;
   
-  margin: size(20) auto;
+  
+  // margin: size(20) auto;
+  margin-top: size(10);
   display: none;
   padding: size(35) size(40) size(0) size(64);
   border-radius: size(24);
@@ -17,15 +17,15 @@
   
   @include breakpoint(desktop1024) {
     display: block;
-    background: url("../../../banner1024.png") no-repeat center center ;
+    background: url("../../../banner1024.png") no-repeat ;
     background-size: cover !important;
-    background-position: center;
+    background-position: right !important;
     height: size(250);
   }
 
   @include breakpoint(desktop1200) {
     background: url("../../../banner1bg.png") no-repeat center center;
-    background-size: contain  !important;
+    background-size: cover  !important;
     background-position: center ;
     height: size(220);
   }

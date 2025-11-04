@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="">
  
- {/* <Dropdown2></Dropdown2> */}
+
 
  <Banner2></Banner2>
  <Slider></Slider>

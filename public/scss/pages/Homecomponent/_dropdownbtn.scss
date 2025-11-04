@@ -93,8 +93,21 @@
   gap: size(12);
   list-style: none;
   li {
+    cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+    .tweeter{
+      // border: 1px solid red;
+      width: size(17);
+    }
     img {
       width: size(17);
+    }
+
+    &:hover{
+background: #a8d9d9;
+border-radius: size(5);
     }
   }
 }
