@@ -7,6 +7,7 @@ import SearchBar from "@/HomeComponents/SearchBar";
 import Dropdown2 from "@/HomeComponents/Dropdown2";
 import Banner2 from "@/HomeComponents/Banner2";
 import Slider from "@/HomeComponents/Slider";
+import Feature from "@/FeatureComponents/Feature";
 // import CustomSelect from "@/Components/CustomSelect";
 // import CustomSelect2 from "@/Components/CustomSelect.2";
 // import SearchBar from "@/Components/SearchBar";
@@ -27,9 +28,11 @@ export default function Home() {
     <div className="">
  
 
+ <Feature></Feature>
 
+{/* 
  <Banner2></Banner2>
- <Slider></Slider>
+ <Slider></Slider> */}
 
      
     </div>

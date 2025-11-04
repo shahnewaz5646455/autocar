@@ -31,13 +31,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body className=" position-relative">
-        <SmallNavbar></SmallNavbar>
+        {/* <SmallNavbar></SmallNavbar>
        <Navbar></Navbar>
-       <SearchBar></SearchBar>
+       <SearchBar></SearchBar> */}
         {/* <Navbar2></Navbar2> */}
         {children}
-        <Footer></Footer>
-        <FixedNavbar></FixedNavbar>
+        {/* <Footer></Footer>
+        <FixedNavbar></FixedNavbar> */}
       </body>
     </html>
   );
