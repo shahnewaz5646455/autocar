@@ -9,19 +9,19 @@ export default function Banner2() {
     },
     {
       name: "Product Category",
-      option: ["Cash", "Card", "Bkash"],
+      option: ["Wheels", "Tire Wheels", "Engine Comp0nent","Breaks and suspendion"],
     },
     {
       name: "Select Brand",
-      option: ["Cash", "Card", "Bkash"],
+      option: ["Toyota", "Haval", "BMW","BYD","Nissan"],
     },
     {
       name: "Select Model",
-      option: ["Cash", "Card", "Bkash"],
+      option: ["sedans", "coupes", "Hatchbacks","SUVs"],
     },
     {
       name: "Model Year",
-      option: ["2012", "2014", "2024"],
+      option: ["2012", "2014", "2024","2008","2009"],
     },
   ];
 

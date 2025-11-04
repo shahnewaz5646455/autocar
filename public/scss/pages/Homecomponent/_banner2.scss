@@ -4,7 +4,7 @@
 .main-banner-container {
   max-width: size(1176);
   width: 100%;
-  height: size(230);
+  
   margin: size(20) auto;
   display: none;
   padding: size(35) size(40) size(0) size(64);
@@ -20,13 +20,14 @@
     background: url("../../../banner1024.png") no-repeat center center ;
     background-size: cover !important;
     background-position: center;
-    height: size(250) !important;
+    height: size(250);
   }
 
   @include breakpoint(desktop1200) {
     background: url("../../../banner1bg.png") no-repeat center center;
-    background-size: contain ;
+    background-size: contain  !important;
     background-position: center ;
+    height: size(220);
   }
 
   @include breakpoint(desktop1024) {
