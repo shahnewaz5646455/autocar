@@ -16,7 +16,10 @@
 @forward "./pages/FooterScss/allinfo";
 
 @forward "./pages/Homecomponent/banner";
+@forward "./pages/Blogpagecomponent/blogpagebanner";
+@forward "./pages/Blogpagecomponent/blog_product";
 @forward "./pages/FeatureProduct/featureproduct";
+@forward "./pages/FeatureProduct/test";
 @forward "./pages/Homecomponent/slider";
 @forward "./pages/Homecomponent/fixednavbar";
 @forward "./pages/Homecomponent/banner2";
@@ -34,8 +37,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  // background: #F4F4F4;
 }
 
+
+#blog-section{
+  background: #F4F4F4;
+}
 
 /* Reset Bootstrap influence */
 .no-bootstrap * {

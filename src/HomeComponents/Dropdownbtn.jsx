@@ -19,6 +19,7 @@ export default function Dropdownbtn() {
   useEffect(() => {
     function onDocClick(e) {
       if (ref.current && !ref.current.contains(e.target)) {
+       
         setOpen(false);
       }
     }
@@ -29,7 +30,9 @@ export default function Dropdownbtn() {
   // close on Escape
   useEffect(() => {
     function onKey(e) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+
+        setOpen(false)};
     }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);

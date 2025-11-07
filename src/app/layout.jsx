@@ -12,6 +12,7 @@ import Navbar from "@/HomeComponents/Navbar";
 import SmallNavbar from "@/HomeComponents/SmallNavbar";
 import FixedNavbar from "@/HomeComponents/FixedNavbar";
 import SearchBar from "@/HomeComponents/SearchBar";
+import Feature from "@/FeatureComponents/Feature";
 // import Navbar from "@/Components/Navbar";
 // import Navbar2 from "@/Components/Navbar2";
 
@@ -31,13 +32,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body className=" position-relative">
-        {/* <SmallNavbar></SmallNavbar>
+        <SmallNavbar></SmallNavbar>
        <Navbar></Navbar>
-       <SearchBar></SearchBar> */}
+       <SearchBar></SearchBar>
         {/* <Navbar2></Navbar2> */}
+
         {children}
-        {/* <Footer></Footer>
-        <FixedNavbar></FixedNavbar> */}
+        {/* <Feature></Feature> */}
+        <Footer></Footer>
+        <FixedNavbar></FixedNavbar>
       </body>
     </html>
   );

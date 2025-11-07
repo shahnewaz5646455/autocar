@@ -8,6 +8,9 @@ import Dropdown2 from "@/HomeComponents/Dropdown2";
 import Banner2 from "@/HomeComponents/Banner2";
 import Slider from "@/HomeComponents/Slider";
 import Feature from "@/FeatureComponents/Feature";
+import FeaturedProduct, { Card } from "@/FeatureComponents/Test";
+import BlogBanner from "@/BlogPageComponent/BlogBanner";
+import BlogProduct from "@/BlogPageComponent/BlogProduct";
 // import CustomSelect from "@/Components/CustomSelect";
 // import CustomSelect2 from "@/Components/CustomSelect.2";
 // import SearchBar from "@/Components/SearchBar";
@@ -26,15 +29,16 @@ import Feature from "@/FeatureComponents/Feature";
 export default function Home() {
   return (
     <div className="">
- 
+      {/* <BlogProduct></BlogProduct> */}
 
- <Feature></Feature>
+      <section id="blog-section">
+        <BlogBanner></BlogBanner>
+      </section>
 
-{/* 
- <Banner2></Banner2>
- <Slider></Slider> */}
+      {/* <Banner2></Banner2> */}
+      {/* <Slider></Slider> */}
 
-     
+      {/* <Feature></Feature> */}
     </div>
   );
 }

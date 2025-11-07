@@ -6,7 +6,11 @@
 
 .slider-container {
 //   border: 1px solid red;
-
+.swiper-pagination{
+  // border: 2px solid red;
+  left: size(70) !important;
+  bottom: size(20) !important;
+}
 
   padding: 10px;
   border: none;
@@ -21,6 +25,10 @@
 
 
     justify-self: end;
+
+    .slider-container{
+      border: 1px solid red;
+    }
     
   
     .swiper-slide{

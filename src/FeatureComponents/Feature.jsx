@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import StarIcon, {
   ArrowIcon,
@@ -12,16 +13,9 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination"; // Required for dots
 export default function Feature() {
-  const leftPrevRef = useRef(null);
-  const leftNextRef = useRef(null);
-
-  // refs for right slider buttons
-  const rightPrevRef = useRef(null);
-  const rightNextRef = useRef(null);
-
   return (
     <div className="container">
-      <div className="feature d-flex">
+      <div className="feature ">
         <div className="feature-left d-flex flex-column ">
           <div className="titles">
             <h2>Featured Product</h2>
@@ -52,21 +46,21 @@ export default function Feature() {
             }}
             speed={800}
             breakpoints={{
-              "@0.00": {
+              0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              "@0.75": {
+              768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              "@1.00": {
+              1024: {
                 slidesPerView: 3,
-                spaceBetween: 40,
+                spaceBetween: 10,
               },
-              "@1.50": {
-                slidesPerView: 1,
-                spaceBetween: 50,
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 20,
               },
             }}
             pagination={{
@@ -77,18 +71,26 @@ export default function Feature() {
           >
             <SwiperSlide className="slide d-flex flex-row">
               <Card></Card>
-              <Card></Card>
+            </SwiperSlide>
+            <SwiperSlide className="slide d-flex flex-row">
               <Card></Card>
             </SwiperSlide>
             <SwiperSlide className="slide d-flex flex-row">
               <Card></Card>
+            </SwiperSlide>
+            <SwiperSlide className="slide d-flex flex-row">
               <Card></Card>
+            </SwiperSlide>
+            <SwiperSlide className="slide d-flex flex-row">
+              <Card></Card>
+            </SwiperSlide>
+            <SwiperSlide className="slide d-flex flex-row">
               <Card></Card>
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div className="feature-right d-none">
+        <div className="feature-right ">
           <div className="titles">
             <h2>Featured Product</h2>
             <div>
@@ -119,6 +121,24 @@ export default function Feature() {
                 disableOnInteraction: true,
               }}
               speed={800}
+              // breakpoints={{
+              //   "@0.00": {
+              //     slidesPerView: 1,
+              //     spaceBetween: 10,
+              //   },
+              //   "@0.75": {
+              //     slidesPerView: 1,
+              //     spaceBetween: 20,
+              //   },
+              //   "@1.00": {
+              //     slidesPerView: 2,
+              //     spaceBetween: 40,
+              //   },
+              //   "@1.50": {
+              //     slidesPerView: 3,
+              //     spaceBetween: 10,
+              //   },
+              // }}
               pagination={{
                 clickable: true,
                 dynamicBullets: true,

@@ -7,8 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function SmallNavbar() {
   return (
-    <div className="smallnavbar
-    ">
+    <div className="smallnavbar">
       <div className="d-flex justify-content-between align-items-center">
         <div className="logo">
           <img
