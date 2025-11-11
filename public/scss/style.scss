@@ -17,6 +17,7 @@
 
 @forward "./pages/Homecomponent/banner";
 @forward "./pages/Blogpagecomponent/blogpagebanner";
+@forward "./pages/CareerPage/career";
 @forward "./pages/Blogpagecomponent/blog_product";
 @forward "./pages/FeatureProduct/featureproduct";
 @forward "./pages/FeatureProduct/test";
@@ -45,6 +46,9 @@
   background: #F4F4F4;
 }
 
+#main{
+  background: #F4F4F4;
+}
 /* Reset Bootstrap influence */
 .no-bootstrap * {
   all: unset;            /* remove all inherited Bootstrap styles */

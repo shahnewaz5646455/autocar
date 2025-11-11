@@ -1,4 +1,3 @@
-
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,8 +18,8 @@ import Feature from "@/FeatureComponents/Feature";
 // Configure Inter font
 const inter = Inter({
   subsets: ["latin"],
-  display: 'swap', // Optional: improves performance
-  variable: '--font-inter', // Optional: for CSS variables
+  display: "swap", // Optional: improves performance
+  variable: "--font-inter", // Optional: for CSS variables
 });
 
 export const metadata = {
@@ -33,11 +32,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body className=" position-relative">
         <SmallNavbar></SmallNavbar>
-       <Navbar></Navbar>
-       <SearchBar></SearchBar>
+        <Navbar></Navbar>
+        <SearchBar></SearchBar>
         {/* <Navbar2></Navbar2> */}
 
-        {children}
+        <section id="main">{children}</section>
+
         {/* <Feature></Feature> */}
         <Footer></Footer>
         <FixedNavbar></FixedNavbar>
